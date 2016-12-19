@@ -1,0 +1,20 @@
+{
+  "name": "smartui-jsdo",
+  "version": "1.0.0",
+  "description": "The JSDO is a JavaScript implementation of the CDO Specification published by Progress Software Corporation.\r The JSDO is a free and open-source full-featured implementation that can be used in web, mobile web and hybrid mobile apps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/consultingwerk/JSDO.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/consultingwerk/JSDO/issues"
+  },
+  "typings": "./lib/progress.jsdo.d.ts",
+  "homepage": "https://github.com/consultingwerk/JSDO#readme"
+}
