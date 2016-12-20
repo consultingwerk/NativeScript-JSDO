@@ -19,10 +19,6 @@ export module progress {
 
 		export class JSDOSession {
 			constructor(options: JSDOSessionOptions);
-
-			static AUTH_TYPE_ANON : string;
-			static AUTH_TYPE_BASIC : string;
-			static AUTH_TYPE_FORM : string;
 			login(username: string, password: string): JQueryPromise;
 			addCatalog(catalogURI: string): JQueryPromise;
 			subscribe(eventName: string, callback: Function, scope?: any): void;
