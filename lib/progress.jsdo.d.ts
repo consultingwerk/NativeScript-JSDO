@@ -20,11 +20,16 @@ export module progress {
 		export class JSDOSession {
 			constructor(options: JSDOSessionOptions);
 			login(username: string, password: string): JQueryPromise;
+			logout(): JQueryPromise
 			addCatalog(catalogURI: string): JQueryPromise;
 			subscribe(eventName: string, callback: Function, scope?: any): void;
 			unsubscribe(eventName: string, callback: Function, scope?: any): void;
 			unsubscribeAll(eventName: string): void;
+			isAuthorized(): JQueryPromise;
+			disconnect(): JQueryPromise;
 		}
+
+		export function getSession(options?: JSDOSessionOptions): JQueryPromise;
 
 		interface SessionOptions {
 		}
@@ -32,7 +37,8 @@ export module progress {
 		interface JSDOSessionOptions {
 			serviceURI: string;
 			catalogURIs?: string;		
-			authenticationModel?: string;		
+			authenticationModel?: string;
+			authProvider?: progress.data.AuthenticationProvider		
 		}
 
 		interface JSDOOptions {
@@ -54,6 +60,9 @@ export module progress {
 
 		interface JQueryPromise {
 			done(any?: any, errCb? : any): any;
+			fail(any?: any);
+			then(any?: any);
+			catch(any?: any);
 		}
 
 		export class JSDO implements IJSTableRef, IJSRecord, ISubscribe {
@@ -163,6 +172,19 @@ export module progress {
 			getId(): string;
 			rejectRowChanges(): boolean;
 			remove(): boolean;
+		}
+
+		export class AuthenticationProvider {
+			constructor(options: IAuthenticationProviderOptions);
+
+			login(username: string, password: string): JQueryPromise;
+			logout(): JQueryPromise;
+			hasClientCredentials(): boolean;
+		}
+
+		export interface IAuthenticationProviderOptions {
+			authenticationModel: string;
+			uri: string;
 		}
 
 		interface IJSTableRef {		
