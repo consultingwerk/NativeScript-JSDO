@@ -1,21 +1,69 @@
 {
-  "name": "@consultingwerk/smartcomponents-jsdo",
-  "version": "1.0.3",
-  "description": "The JSDO is a JavaScript implementation of the CDO Specification published by Progress Software Corporation.\r The JSDO is a free and open-source full-featured implementation that can be used in web, mobile web and hybrid mobile apps.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_args": [
+    [
+      {
+        "raw": "..\\..\\SmartComponentsJSDO",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "..\\..\\SmartComponentsJSDO",
+        "spec": "c:\\workspace\\SmartComponentsJSDO",
+        "type": "directory"
+      },
+      "c:\\workspace\\smartcomponents-nativescript\\smartcomponents-nativescript"
+    ]
+  ],
+  "_from": "..\\..\\SmartComponentsJSDO",
+  "_id": "@consultingwerk/nativescript-jsdo@1.0.0",
+  "_inCache": true,
+  "_location": "/@consultingwerk/nativescript-jsdo",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "..\\..\\SmartComponentsJSDO",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "..\\..\\SmartComponentsJSDO",
+    "spec": "c:\\workspace\\SmartComponentsJSDO",
+    "type": "directory"
   },
-  "publishConfig": { "registry": "http://esd.consultingwerkcloud.com:4873" },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "file:..\\..\\SmartComponentsJSDO",
+  "_shasum": "0a7138128fbb623185a88875398a9c6641e041c2",
+  "_shrinkwrap": null,
+  "_spec": "..\\..\\SmartComponentsJSDO",
+  "_where": "c:\\workspace\\smartcomponents-nativescript\\smartcomponents-nativescript",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/consultingwerk/JSDO/issues"
+  },
+  "dependencies": {},
+  "description": "The JSDO is a JavaScript implementation of the CDO Specification published by Progress Software Corporation.\r The JSDO is a free and open-source full-featured implementation that can be used in web, mobile web and hybrid mobile apps.",
+  "devDependencies": {},
+  "gitHead": "1829430578a61498c324a81937fd4ab51da3f7e7",
+  "homepage": "https://github.com/consultingwerk/JSDO#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "@consultingwerk/nativescript-jsdo",
+  "nativescript": {
+    "platforms": {
+      "android": "2.3.0"
+    }
+  },
+  "optionalDependencies": {},
+  "publishConfig": {},
+  "readme": "# JSDO\r\nThe JSDO is a JavaScript implementation of the CDO Specification published by Progress Software Corporation.\r\nThe JSDO is a free and open-source full-featured implementation that can be used in web, mobile web and hybrid mobile apps. \r\n\r\n### Documentation\r\nProgress® Data Objects, which include the JSDO on the client, represent the Progress-released implementation of Cloud Data Objects. For more information on the latest release, see the <a href=\"https://documentation.progress.com/output/pdo\">Progress Data Objects Guide and Reference.</a>\r\n\r\n### JSDO and OpenEdge compatibility\r\n| JSDO version | OpenEdge version |\r\n|----|----|\r\n| 4.4.0 | 11.6.3, 11.7.x |\r\n\r\n### Download<a name=\"download\"></a>\r\nYou can <a href=\"https://github.com/CloudDataObject/JSDO/zipball/master\">download a copy of the full JSDO </a> to a zip file or the individual files below.\r\n\r\n\r\n| Source File| Purpose | \r\n| ---------- | ------- | \r\n| [progress.js](https://github.com/CloudDataObject/JSDO/blob/master/src/progress.js) | JSDO core |\r\n| [progress.session.js](https://github.com/CloudDataObject/JSDO/blob/master/src/progress.session.js) | JSDO session management |\r\n| [progress.util.js](https://github.com/CloudDataObject/JSDO/blob/master/src/progress.util.js) | Helper classes for the JSDO |\r\n| [progress.data.kendo.js](https://github.com/CloudDataObject/JSDO/blob/master/src/progress.data.kendo.js) | Kendo UI DataSource for the JSDO |\r\n| [auth/progress.auth.js](https://github.com/CloudDataObject/JSDO/blob/master/src/auth/progress.auth.js) | JSDO authentication provider |\r\n| [auth/progress.auth.basic.js](https://github.com/CloudDataObject/JSDO/blob/master/src/auth/progress.auth.basic.js) | JSDO authentication provider (BASIC auth) |\r\n| [auth/progress.auth.form.js](https://github.com/CloudDataObject/JSDO/blob/master/src/auth/progress.auth.form.js) | JSDO authentication provider (FORM-based auth) |\r\n| [auth/progress.auth.sso.js](https://github.com/CloudDataObject/JSDO/blob/master/src/auth/progress.auth.sso.js) | JSDO authentication provider (SSO auth) |\r\n\r\n\r\n| Lib File| Purpose | \r\n| ------- | ------- | \r\n| [progress.all.js](https://github.com/CloudDataObject/JSDO/blob/master/lib/progress.all.js) | The JSDO plus the Kendo UI DataSource for JSDO |\r\n| [progress.all.min.js](https://github.com/CloudDataObject/JSDO/blob/master/lib/progress.all.min.js) | The JSDO plus the Kendo UI DataSource for JSDO minified for deployment |\r\n| [progress.jsdo.js](https://github.com/CloudDataObject/JSDO/blob/master/lib/progress.jsdo.js) | The JSDO core components (JSDO, Session, Util classes) |\r\n| [progress.jsdo.min.js](https://github.com/CloudDataObject/JSDO/blob/master/lib/progress.jsdo.min.js) | The JSDO core components (JSDO, Session, Util classes) minified for deployment |\r\n\r\nThe JSDO can be used by hybrid mobile apps, mobile web apps and web browser apps to access OpenEdge and Rollbase servers. Other implementations include a client in a mobile Hybrid App (a variation of the browser client), a Telerik® NativeScript client, a Node.js server, and a Java server. The JSDO has successfully been used with servers other than OpenEdge such as Node.js to export data created / aggregated in Modulus™ to a Progress® Rollbase Application.\r\n\r\n### License\r\nLicensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\r\n\r\nhttp://www.apache.org/licenses/LICENSE-2.0\r\n\r\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\r\n",
+  "readmeFilename": "readme.md",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/consultingwerk/JSDO.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/consultingwerk/JSDO/issues"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "typings": "./lib/progress.jsdo.d.ts",
-  "homepage": "https://github.com/consultingwerk/JSDO#readme"
+  "version": "1.0.1"
 }
